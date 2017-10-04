@@ -4,29 +4,66 @@
 
 @media only screen and (min-width:1200px) and (max-width: 1399px){
    
-	
 }
+
 @media only screen and (min-width:1400px) and (max-width: 1600px){
     
-	
 }
+
 @media only screen and (max-width:1366px){
 	
 }
+
 @media only screen and (max-width:1200px){
 	
 }
+
 @media only screen and (max-width:1024px){
 	
 }
 
 @media only screen and (max-width:767px){
-	
-	
+	.banner-section{
+		height: 300px;
+	}
+	.banner-section .inner-txt{
+		text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	}
+	.navbar-toggler-icon{
+	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	}
+	.log-links{
+		flex-direction: row;
+		padding-top: .5rem;
+    	border-top: 1px solid #f2f2f2;
+	}
+	.log-links > li{
+		display: inline-block;
+	}
+	.log-links > li > a{
+		display: block;
+	}
+	.tell-friends .sec-heading{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sec-heading h2{
+		line-height: 3rem;
+	}
+	.frnd-form .form-left{
+		padding-top: 0;
+	}
+	.appstore-link{
+		display: block;
+		margin: auto;
+	}
+	.frnd-form .media-right{
+		margin-top: 2rem;
+	}
+
 }
 
-
 @media only screen and (max-width:480px){
-	
+
 }
 
