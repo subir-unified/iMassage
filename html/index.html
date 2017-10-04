@@ -17,7 +17,7 @@
 
 <header class="site-header">
 	<nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="#"><img src="images/imassage-logo.svg" alt=""></a>
+      <a class="navbar-brand" href="#"><img src="images/imassage-logo.svg" class="img-fluid" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-controls="headernav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,9 +30,10 @@
             <a class="nav-link" href="#">Store</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" placeholder="Search" type="text">
-        </form>
+        <ul class="navbar-nav log-links">
+	      	<li><a href="#">サインイン</a></li>
+	      	<li><a href="#">登録する</a></li>
+	    </ul>
       </div>
     </nav>
 </header>
@@ -41,6 +42,16 @@
 <div class="banner-section">
 	<div class="banner-img">
 		<img src="images/banner.jpg" alt="">
+	</div>
+	<div class="banner-txt">
+		<div class="container">
+			<div class="inner-txt">
+				<div class="logo-placeholder">
+					<img src="images/imassage-logo-light.svg" alt="" class="img-fluid">
+				</div>
+				<p>お気に入りのセラピストをその場で選べる、オンデマンド・マッサージアプリ！</p>
+			</div>
+		</div>
 	</div>
 </div>
 <!-- /.banner-section -->
@@ -144,10 +155,33 @@
 </div>
 <!-- /.favorite-therapists -->
 
+<div class="tell-friends">
+	<div class="container">
+		<div class="sec-heading text-center">
+			<h2>お友達に <span class="logo-inline"><img src="images/imassage-logo.svg" class="img-fluid" alt=""></span> を紹介してポイントプレゼントしよう！紹介する毎にあなたもポイントGET!</h2>
+		</div>
+		<div class="frnd-form clearfix">
+			<div class="form-left pull-left">
+				<h2>今すぐアプリをゲットしよう！</h2>
+				<div class="input-group">
+			      <input type="text" class="form-control cell-no" placeholder="XXX-XXXX-XXXX">
+			      <span class="input-group-btn">
+			        <button class="btn" type="submit">Text me a link</button>
+			      </span>
+			    </div>
+			    <a href="#" target="_blank" class="appstore-link"><img src="images/app-store.png" alt="" class="img-fluid"></a>
+			</div>
+			<div class="media-right pull-right">
+				<img src="images/referral-media.png" alt="" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.tell-friends -->
 
 <div class="faq-section">
 	<div class="container">
-		<div class="sec-heading">
+		<div class="sec-heading text-center">
 			<h2>よくある質問</h2>
 		</div>
 		<div id="accordion" role="tablist">
@@ -165,42 +199,357 @@
 		      </div>
 		    </div>
 		  </div>
+		  <!-- /.card -->
 		  <div class="card">
 		    <div class="card-header" role="tab">
 		      <h5 class="mb-0">
 		        <a class="collapsed" data-toggle="collapse" href="#faq2" aria-expanded="false">
-		          Collapsible Group Item #2
+		          予約の確認はどうすれば良いですか？
 		        </a>
 		      </h5>
 		    </div>
 		    <div id="faq2" class="collapse" role="tabpanel" data-parent="#accordion">
 		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        アプリケーションメニューの「予約」からご確認ください。
 		      </div>
 		    </div>
 		  </div>
+		  <!-- /.card -->
 		  <div class="card">
 		    <div class="card-header" role="tab">
 		      <h5 class="mb-0">
 		        <a class="collapsed" data-toggle="collapse" href="#faq3" aria-expanded="false">
-		          Collapsible Group Item #3
+		          予約の支払いはいつ行われますか？
 		        </a>
 		      </h5>
 		    </div>
 		    <div id="faq3" class="collapse" role="tabpanel" data-parent="#accordion">
 		      <div class="card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		        予約した時点で、支払いは完了されます。
 		      </div>
 		    </div>
 		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq4" aria-expanded="false">
+		          料金の支払い方法を教えてください。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq4" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        クレジットカード（VISA, Master Card, American Express）、PayPal、Paidy のどれかでお支払いください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq5" aria-expanded="false">
+		          選択したセラピストを他のセラピストに変更することはできますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq5" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        変更することはできませんので、今の予約をキャンセルした後、再度予約を行ってください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq6" aria-expanded="false">
+		          同じセラピストで再度の予約を行うことはできますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq6" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        はい、可能です。お気に入りリストに追加も可能ですのでそこから簡単に同じセラピストを再度予約することもできます。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq7" aria-expanded="false">
+		          現金で支払いはできますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq7" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        お支払いはクレジットカードのみとなっております。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq8" aria-expanded="false">
+		          口コミはどうやって投稿されるのですか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq8" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        アプリケーションメニューの「予約」から「履歴」に進むと、それぞれの履歴が見ることができます。レビューを残したいセラピストを選択すると予約詳細のページにいきます。そのページを下までスクロールすると「レビューを書く」のボタンがあるので、タップしてレビュー投稿画面に進みレビューを入力してください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq9" aria-expanded="false">
+		          imassage ポイントの残高・利用履歴を知りたい
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq9" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        アプリケーションメニューの「imassageポイント」から確認できます。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq10" aria-expanded="false">
+		          無断キャンセルなどによる利用制限に期間はあるのですか。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq10" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        ございません。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq11" aria-expanded="false">
+		          無断キャンセルなどによりネット予約できなくなった場合、一度退会すればまた利用できますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq11" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        １つのアカウントにつき１つのEmailアドレスが必要となります。新しいアカウントの作成をご希望される場合は、既に登録されているメールアドレスとは異なるメールアドレスでご登録ください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq12" aria-expanded="false">
+		          予約をキャンセルした場合、利用予定だったimassageポイントは戻ってきますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq12" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        下のリンクからキャンセレーションポリシーをご確認ください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq13" aria-expanded="false">
+		          予約を変更したい。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq13" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        同じセラピストであれば予約変更が可能です。アプリケーションメニューの「予約」から変更を行ってください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq14" aria-expanded="false">
+		          会員登録情報を変更したい。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq14" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        アプリケーションメニューのアカウント情報から変更を行ってください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq15" aria-expanded="false">
+		          予約確認メールが届きません。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq15" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        もしメールが届かない場合はジャンクメールをご確認ください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq16" aria-expanded="false">
+		          子供や友達の分の予約も代理で予約できますか。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq16" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        予約は個人情報も含みますので、もしお友達などに予約を取りたい場合は、あなたのpromo codeを送信して、ポイントをプレゼントしましょう。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq17" aria-expanded="false">
+		          imassageから予約をしたとき、サロンにはどこまで個人情報が伝わりますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq17" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        連絡先に含まれる、お名前とメールアドレスになります。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq18" aria-expanded="false">
+		          imassageに掲載されているメニューの料金は税込ですか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq18" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        メニューページには含まれておりませんが、お支払いページで税込の金額をご確認いただけます。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq19" aria-expanded="false">
+		          セラピストへ直接メールしたい。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq19" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        セラピストへは直接ご連絡できません。お店に直接ご連絡ください。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq20" aria-expanded="false">
+		          予約時に指定したメニューの施術（所要）時間は必ず表示通りなのでしょうか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq20" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        メニューの施術時間は表示通りとなります。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq21" aria-expanded="false">
+		          予約は当日も受付できますか？
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq21" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        はい、予約可能です。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
+		  <div class="card">
+		    <div class="card-header" role="tab">
+		      <h5 class="mb-0">
+		        <a class="collapsed" data-toggle="collapse" href="#faq22" aria-expanded="false">
+		          imassageポイントの使い方がよく分からない。
+		        </a>
+		      </h5>
+		    </div>
+		    <div id="faq22" class="collapse" role="tabpanel" data-parent="#accordion">
+		      <div class="card-body">
+		        お支払時にポイント使用、不使用を選択することができます。
+		      </div>
+		    </div>
+		  </div>
+		  <!-- /.card -->
 		</div>
 	</div>
 </div>
+<!-- /.faq-section -->
+
+<footer class="site-footer text-center">
+	<div class="container">
+		<div class="lang-drop">
+			<div class="dropdown">
+			  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">日本語</button>
+			  <div class="dropdown-menu">
+			    <a class="dropdown-item" href="#">日本語</a>
+			    <a class="dropdown-item" href="#">English</a>
+			  </div>
+			</div>
+		</div>
+		<div class="footer-menu">
+			<ul>
+				<li><a href="#">会社概要</a></li>
+				<li><a href="#">利用規約</a></li>
+				<li><a href="#">プライバシーポリシー</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			Copyright &copy; 2017 OpenTime K.K. All Rights Reserved.
+		</div>
+	</div>
+</footer>
 
 
 
 <script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/init.js"></script>
 </body>
 </html>
