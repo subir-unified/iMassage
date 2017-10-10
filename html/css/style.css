@@ -2,6 +2,7 @@
 /* CSS Document */
 
 @import url('font-awesome.min.css');
+@import url('aos.css');
 @font-face {
     font-family: 'hiragino';
     src: url('../fonts/hiragino_sans_gb_w3-webfont.woff2') format('woff2'),
@@ -75,7 +76,15 @@ a,
 .banner-section .inner-txt{
 	max-width: 500px;
 	color: #fff;
-	font-size: 24px;
+}
+.banner-section .inner-txt h2{
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+.banner-section .inner-txt.st-txt h2{
+	line-height: 1.1;
+	font-size: 2rem;
 }
 .banner-section .inner-txt .logo-placeholder{
 	max-width: 200px;
@@ -189,11 +198,6 @@ a,
 	opacity: 0.8;
 }
 
-
-
-
-
-
 .faq-section{
 	padding: 3rem 0;
 	background: #FAFAFA;
@@ -295,6 +299,172 @@ a,
 .footer-menu > ul > li > a:hover{
 	color: #E33A36;
 }
+
+.content-sec{
+	padding: 50px 0;
+}
+.content-sec .section-headeing{
+	margin-bottom: 50px;
+}
+.content-sec .section-headeing h3{
+	font-weight: 400;
+	color: #000;
+}
+.content-sec .section-headeing .lead{
+	font-weight: 400;
+}
+.feature-blocks{
+	padding-bottom: 0 !important;
+}
+.feature-blocks .fe-block{
+	position: relative;
+	padding-left: 70px;
+	margin-bottom: 50px;
+}
+.feature-blocks .fe-block .fe-icon{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.feature-blocks .fe-block .fe-header{
+	position: relative;
+	margin-bottom: 30px;
+}
+.feature-blocks .fe-block .fe-header:before{
+	width: 30px;
+	height: 3px;
+	background: #E33A36;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	border-radius: 5px;
+	content: "";
+}
+.feature-blocks .fe-block .fe-header h4{
+	font-weight: 400;
+	color: #000;
+}
+
+.help-blocks{
+	background: #FAFAFA;
+	padding-bottom: 0 !important;
+}
+.help-blocks .hlp-block{
+	max-width: 250px;
+	margin: 0 auto 50px;
+}
+.help-blocks .hlp-block .hlp-icon{
+	margin-bottom: 20px;
+}
+
+.benifits-blocks{
+	position: relative;
+	min-height: 650px;
+	overflow: hidden;
+}
+.benifits-blocks .benifit-screen{
+	position: absolute;
+	right: 0;
+	top: 160px;
+	bottom: 50px;
+	width: 50%;
+	z-index: 1;
+	text-align: right;
+}
+.benifits-blocks .benifit-screen img{
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+}
+.benifits-blocks .container{
+	position: relative;
+	z-index: 2;
+}
+.benifits-blocks .bn-block{
+	padding-left: 70px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.benifits-blocks .bn-block .bn-icon{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.benifits-blocks .bn-block h4{
+	font-weight: 400;
+	color: #000;
+}
+
+.solution-wrap{
+	background: #FAFAFA;
+}
+.solution-wrap .ipod{
+	max-width: 250px;
+	height: auto;
+	float: right;
+	margin-right: 100px;
+}
+.solution-wrap .section-headeing{
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+.solution-wrap .inline-logo img{
+	max-width: 90px;
+	vertical-align: top;
+}
+.solution-wrap p{
+	line-height: 1.8;
+}
+
+.profile-section{
+	position: relative;
+	padding: 50px 0;
+}
+.profile-section .profile-banner{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.profile-section .profile-banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-box{
+	max-width: 750px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.profile-box .box-inner{
+	background: rgba(255,255,255,0.9);
+	padding: 3rem 3rem 2rem;
+}
+.profile-box .heading{
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 2rem;
+}
+.profile-box dt{
+	color: #000;
+}
+.profile-box dt,
+.profile-box dd{
+	margin-bottom: 1rem;
+}
+.profile-box ul{
+	padding: 0 0 0 15px;
+}
+.profile-box ul li{
+	margin-bottom: 1rem;
+}
+
+
 
 
 

@@ -22,6 +22,37 @@
 	
 }
 
+@media only screen and (max-width:992px){
+	.benifits-blocks .benifit-screen{
+		position: static;
+		width: auto;
+		padding: 0 1rem;
+	}
+	.benifits-blocks .benifit-screen img{
+		max-width: 100%;
+		height: auto;
+	}
+	.solution-wrap .ipod{
+		max-width: 200px;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	.solution-wrap .section-headeing{
+		margin-top: 20px;
+	}
+	.frnd-form .form-left{
+		float: none;
+		padding: 3rem 0;
+		text-align: center;
+	}
+	.frnd-form .media-right{
+		float: none;
+		text-align: center;
+		margin: auto;
+	}
+}
+
 @media only screen and (max-width:767px){
 	.banner-section{
 		height: 300px;
@@ -59,6 +90,9 @@
 	}
 	.frnd-form .media-right{
 		margin-top: 2rem;
+	}
+	.profile-box .box-inner{
+		margin: 0 1rem;
 	}
 
 }
