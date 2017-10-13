@@ -24,6 +24,10 @@ a,
 }
 .site-header{
 	font-size: 1rem;
+	background: #fff;
+	position: relative;
+	box-shadow: 0 0 15px rgba(0,0,0,0.15);
+	z-index: 9;
 }
 .site-header .navbar-brand{
 	max-width: 200px;
@@ -464,11 +468,28 @@ a,
 	margin-bottom: 1rem;
 }
 
-
-
-
-
-
+.terms-wrap{
+	background: #F9F9F9;
+	padding: 3rem 0;
+}
+.terms-wrap h1{
+	color: #000;
+	margin-bottom: 3rem;
+}
+.terms-wrap h2{
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: #000;
+}
+.terms-wrap ul{
+	padding-left: 15px;
+	margin-left: 0;
+}
+.terms-wrap ul li{
+	margin-bottom: 1rem;
+	list-style: disc;
+}
 
 
 
