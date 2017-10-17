@@ -4,17 +4,20 @@
 @import url('font-awesome.min.css');
 @import url('aos.css');
 @font-face {
-    font-family: 'hiragino';
-    src: url('../fonts/hiragino_sans_gb_w3-webfont.woff2') format('woff2'),
-         url('../fonts/hiragino_sans_gb_w3-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'HiraginoKaku-GothicPro';
+  src: url('../fonts/HiraginoKaku-GothicPro.eot?#iefix') format('embedded-opentype'),  
+  	   url('../fonts/HiraginoKaku-GothicPro.otf') format('opentype'),
+	   url('../fonts/HiraginoKaku-GothicPro.woff') format('woff'), 
+	   url('../fonts/HiraginoKaku-GothicPro.ttf') format('truetype'), 
+	   url('../fonts/HiraginoKaku-GothicPro.svg#HiraginoKaku-GothicPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 *{
 	outline: none !important;
 }
 body{
-	font-family: 'hiragino', PingFang SC, Arial;
+	font-family: 'HiraginoKaku-GothicPro', PingFang SC, Arial;
 	font-size: .9rem;
 	color: #5C5C5C;
 }
@@ -490,12 +493,5 @@ a,
 	margin-bottom: 1rem;
 	list-style: disc;
 }
-
-
-
-
-
-
-
 
 
